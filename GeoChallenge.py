@@ -98,7 +98,7 @@ def mode_country_guess():
         if guess in adjacency_map.get(mystery_country, set()):
             print(f"🧭 {guess} is adjacent! Move {arrow} to reach the mystery country.\n")
         elif distance > 9000:
-            print(f"📉 Too far from {guess}!\n")
+            print(f"📉 Too far!\n")
         else:
             print(f"🧭 Move {arrow} for {distance:.2f} km from {guess}\n")
         highlight_country(guess, color="orange")
